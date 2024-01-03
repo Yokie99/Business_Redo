@@ -1,3 +1,6 @@
+@font-face { font-family:Amaranth-Regular; src: url("../fonts/Amaranth-Regular.ttf"); }
+@font-face { font-family:Amaranth-Bold; src: url("../fonts/Amaranth-Bold.ttf"); }
+
 /* Kyle Style */
 .navLogo{
     height: 100px;
@@ -31,7 +34,10 @@
 
 /* Jo Style */
 
-
+.navBarText{
+    color: white !important;
+    font-family: Amaranth-Regular;
+}
 
 
 
