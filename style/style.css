@@ -8,24 +8,44 @@
     background-color: rgba(65, 64, 69, 1);
 }
 
+.bb1{
+    border: solid 3px black;
+}
+.bb2{
+     border: solid 3px blue;
+}
+
+.headTxt{
+    font-size: 36px;
+    color: white;
+}
+.pTxt{
+    font-size: 30px;
+    color: white;
+
+}
+
 
 .bgBeam{
-    height: 600px;   
+    
+    height: 80vh;   
     
     background-image: url(../assets/flying_beam.jpg);
-    background-position: 10px -230px;
+    background-position: 0px -230px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     
 }
 
 
 .bgVault{
+   
+    height: 80vh;
     background-image: url(../assets/vault_landing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
-}
+   
+} 
 
 
 
