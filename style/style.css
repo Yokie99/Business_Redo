@@ -9,10 +9,23 @@
 }
 
 
+.bgBeam{
+    height: 600px;   
+    
+    background-image: url(../assets/flying_beam.jpg);
+    background-position: 10px -230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 
 
-
-
+.bgVault{
+    background-image: url(../assets/vault_landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
 
 
 
