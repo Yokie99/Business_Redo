@@ -3,7 +3,7 @@
 
 /* Kyle Style */
 .navLogo{
-    height: 100px;
+    height: 70px;
     width: auto;
 }
 
@@ -57,6 +57,18 @@
 .navBarText{
     color: white !important;
     font-family: Amaranth-Regular;
+    font-size: 20px;
+}
+
+.classesHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.classesHeader .title{
+    font-family: Amaranth-Regular;
+    font-size: 50px;
 }
 
 
