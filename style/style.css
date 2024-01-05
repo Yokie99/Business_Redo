@@ -815,6 +815,15 @@
     background-repeat: no-repeat;
 }
 
+.backgroundHero2 {
+    background-image: url(../assets/crop.jpg);
+    opacity: 85%;
+    background-size: 100%;
+    height: 150px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
 .fifty {
     font-size: 50px;
 }
@@ -829,7 +838,12 @@
 
 .deskbtn {
     height: 120px;
-    width: 400px;
+    width: 450px;
+}
+
+.deskbtn2 {
+    height: 50px;
+    width: 300px;
 }
 
 #line {
@@ -867,3 +881,8 @@
 .ama {
     font-family: Amaranth-Regular;
 }
+
+.vw1 {
+    font-size: 1vw;
+}
+
