@@ -815,9 +815,27 @@
     background-repeat: no-repeat;
 }
 
+.twenty {
+    font-size: 20px;
+}
+
 .fifty {
     font-size: 50px;
 }
+
+
+@media only screen and (max-width: 767px) {
+.twenty {
+    font-size: 12px;
+}
+
+.fifty {
+    font-size: 32px;
+}
+   
+}
+
+
 
 .tf {
     font-size: 35px;
@@ -840,9 +858,6 @@
     font-size: 30px;
 }
 
-.twenty {
-    font-size: 20px;
-}
 
 .coachsize {
     object-fit: cover;
