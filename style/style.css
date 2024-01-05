@@ -52,6 +52,37 @@
    
 } 
 
+/* Birthday party */
+
+.bgBday{
+    
+    height: 80vh;   
+    
+    background-image: url(../assets/Birthday.png);
+    background-position: -350px ;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    
+}
+
+.bdayHeroBox{
+    width: 70vw;
+    
+    background-color: rgba(255, 255, 255, 0.626);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.bdayHeroTxt{
+    font-size: 45px;
+    
+    
+}
 
 
 /* Jo Style */
