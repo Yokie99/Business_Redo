@@ -339,7 +339,7 @@
     font-size: 35px;
 }
 
-.white, .tf{
+.white, .fifty, .tf{
     color: white;
 }
 
@@ -368,6 +368,8 @@
 
 .coachBG {
     background-color: #D9D9D9;
+    height: 350px;
+    width: 100%;
 }
 
 .fourty {
