@@ -93,7 +93,7 @@
 }
 
 /* desktop */
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1440px) {
     .classesHeader {
         padding-left: 40px;
         padding-right: 40px;
@@ -124,6 +124,10 @@
     }
 
     /*-----------------------*/
+
+    .tabletPrice {
+        display: none;
+    }
 
     .classesMenu .subsection1 {
         padding-left: 50px;
@@ -278,6 +282,10 @@
 
 /*footer for tablet and desktop*/
 @media only screen and (min-width: 768px) {
+    .classMenuAccordion {
+        display: none;
+    }
+
     .footer {
         display: grid;
         grid-template-rows: max-content max-content;
@@ -346,6 +354,121 @@
         font-family: OpenSans-Regular;
         font-size: 20px;
     }
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .classesHeader {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .classesHeader .title {
+        font-family: Amaranth-Regular;
+        font-size: 40px;
+    }
+
+    .classesHeader .button {
+        width: 200px
+    }
+
+    .classesMenu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .classesMenu .header {
+        border-bottom: solid;
+        border-width: 4px;
+        font-family: Amaranth-Bold;
+        font-size: 40px;
+    }
+
+    /*-----------------------*/
+
+    .classesMenu .subsection1 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection2 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection3 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .subheader {
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        padding-left: 0 !important;
+    }
+
+    .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+    }
+
+    .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 25px;
+    }
+
+    .subheader .price {
+        display: none;
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+    }
+
+    .tabletPrice {
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    .description {
+        grid-row: 4;
+        font-family: OpenSans-Regular;
+        font-size: 18px;
+        padding-left: 0 !important;
+    }
+
+    .image {
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    /* -------------------------- */
+
+    .footer .location2 br {
+        display: none;
+    }
+
 }
 
 /*mobile*/
@@ -457,7 +580,6 @@
         grid-template-rows: max-content max-content;
         grid-template-columns: 4fr 3fr;
         height: max-content;
-        margin-top: 10px;
         padding-left: 45px;
         padding-right: 45px;
         padding-top: 20px;
