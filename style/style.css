@@ -103,11 +103,19 @@
     font-size: 35px;
 }
 
-.white, .fifty, .tf{
+.white, .tf{
     color: white;
 }
 
 .deskbtn {
     height: 120px;
     width: 400px;
+}
+
+#line {
+    opacity: 100%;
+}
+
+.thirty {
+    font-size: 30px;
 }
