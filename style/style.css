@@ -59,7 +59,7 @@
 
 .bgBday{
     
-    height: 80vh;   
+    height: 60vh;   
     
     background-image: url(../assets/Birthday.png);
     /* background-position: -350px ; */
@@ -95,6 +95,48 @@
     object-fit: cover;
     
 }
+
+
+/* birthday mobile */
+.bgBdayMobile{
+    
+    height: 50vh;   
+    
+    background-image: url(../assets/Birthday.png);
+    background-size: cover;
+    background-position: 50% ;
+    background-repeat: no-repeat; 
+    position: relative;
+    
+}
+.bdayHeroTxtMobile{
+    font-size: 30px;
+       
+}
+
+.bdayHeroBoxMobile{
+    width: 90vw;
+    
+    background-color: rgba(255, 255, 255, 0.626);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.bdayImgBox{
+    width: auto;
+    height: 20vh;
+}
+
+.bdayImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Jo Style */
 
 .navBarText{
