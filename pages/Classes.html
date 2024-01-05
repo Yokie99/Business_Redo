@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body>
+<body style="height: 100vh; display: flex; flex-direction: column; flex: 1;">
 
 
   <nav class="p-0 navbar navbar-expand-lg bg-body-tertiary">
@@ -25,19 +25,19 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item mx-4">
+          <li class="nav-item ms-auto me-2">
             <a class="nav-link active navBarText" aria-current="page" href="../index.html">HOME</a>
           </li>
-          <li class="nav-item mx-4">
+          <li class="nav-item ms-auto me-2">
             <a class="nav-link active navBarText" aria-current="page" href="../pages/About.html">ABOUT</a>
           </li>
-          <li class="nav-item mx-4">
+          <li class="nav-item ms-auto me-2">
             <a class="nav-link active navBarText" aria-current="page" href="../pages/Classes.html">CLASSES</a>
           </li>
-          <li class="nav-item mx-4">
+          <li class="nav-item ms-auto me-2">
             <a class="nav-link active navBarText" aria-current="page" href="../pages/Comp.html">COMPETITION</a>
           </li>
-          <li class="nav-item mx-4">
+          <li class="nav-item ms-auto me-2">
             <a class="nav-link active navBarText" aria-current="page" href="../pages/Birthday.html">PARTY
               RESERVATIONS</a>
           </li>
@@ -48,7 +48,7 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-4">
+            <li class="nav-item ms-auto me-2">
               <a class="nav-link active navBarText" style="text-decoration: underline;" aria-current="page"
                 href="#">SIGN IN</a>
             </li>
@@ -63,8 +63,8 @@
 
   <div class="classesHeader">
     <div class="title">OUR CLASSES</div>
-    <a href="https://app.iclasspro.com/portal/championgym1" target="_blank"><img src="../assets/RegisterBtn.png"
-        alt=""></a>
+    <a href="https://app.iclasspro.com/portal/championgym1" target="_blank"><img class="button"
+        src="../assets/RegisterBtn.png" alt=""></a>
   </div>
 
   <div class="classesMenu">
@@ -78,6 +78,7 @@
         </div>
         <div class="price">$67/month</div>
       </div>
+      <div class="tabletPrice">$67/month</div>
       <div class="description pe-4">For boys and girls ages 18 months to 3 years old. Playful parent and tot class
         centered around age appropriate developmental movements. Parents will assist children with skills and on the
         equipment with the aide of the instructor.</div>
@@ -202,7 +203,7 @@
     <div class="subsection3 mb-5">
       <div class="subheader">
         <div class="d-flex">
-          <div class="nameBold">Beginning Tumbling &nbsp</div>
+          <div class="nameBold">Advanced Tumbling &nbsp</div>
           <div class="nameRegular">- 55 min, Once a week</div>
         </div>
         <div class="price">$89/month</div>
@@ -213,13 +214,199 @@
     </div>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px;">
+  <div class="classMenuAccordion">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed header pe-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Preschool Classes
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Parent Tot &nbsp</div>
+                - 45 min, Once a week
+              </div>
+            </div>
+            <div class="image"><img src="../assets/ParentTot.png" alt=""></div>
+            <div class="price">$67/month</div>
+            <div class="description pe-4">For boys and girls ages 18 months to 3 years old. Playful parent and tot class
+              centered around age appropriate developmental movements. Parents will assist children with skills and on
+              the
+              equipment with the aide of the instructor.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Tiny Tot &nbsp</div>
+                - 45 min, Once a week
+              </div>
+            </div>
+            <div class="image"><img src="../assets/TinyTot.png" alt=""></div>
+            <div class="price">$67/month</div>
+            <div class="description pe-4">Emphasizes fundamental gymnastics positions and skills on all gymnastics apparatus,
+              while helping to develop focus, strength, and flexibility. The emphasis of our professionally developed
+              pre-school curriculum is on safety and FUN while learning gymnastics and movement skills.</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed header pe-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Girl’s Recreational Classes
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Level 1 &nbsp</div>
+                - 55 min, Once a week (Ages 5+)
+              </div>
+            </div>
+            <div class="image"><img src="../assets/G_Level_1.png" alt=""></div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">We offer beginning gymnastics classes for the school aged child either just
+              beginning gymnastics or those who may be a little rusty. These students will advance through the fundamental
+              skill progression of gymnastics on all of the Olympic events. Classes are separated by age. Call for class
+              times.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Level 2 &nbsp</div>
+                - 55 min, Once a week (Ages 5+)
+              </div>
+            </div>
+            <div class="image"><img src="../assets/G_Level_2.png" alt=""></div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">This class is for those who have completed our beginner program or for those who
+              have some gymnastics experience. Our intermediate level gymnasts will further develop their strength,
+              flexibility and skills on each event. Classes are designed to provide a more challenging environment focusing on
+              their gymnastics skills while continuing to promote their self-esteem and body awareness.*Students must be
+              evaluated to register for this class.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Level 3 &nbsp</div>
+                - 55 min, Once a week (Ages 5+)
+              </div>
+            </div>
+            <div class="image"><img src="../assets/G-Level_3.png" alt=""></div>
+            <div class="price">$129/month</div>
+            <div class="description pe-4">TThis class is intended for gymnasts who have either completed our intermediate
+              program, or who have gymnastics experience. Our curriculum is designed to provide a multitude of challenges to
+              enhance gymnastics abilities.</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed header pe-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Boys’s Recreational Classes
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Level 1 &nbsp</div>
+                - 55 min, Once a week (Ages 5+)
+              </div>
+            </div>
+            <div class="image"><img src="../assets/B_Level_1.png" alt=""></div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">We offer beginning gymnastics classes for the school aged child either just
+              beginning gymnastics or those who may be a little rusty. These students will advance through the fundamental
+              skill progression of gymnastics on all of the Olympic events. Classes are separated by age. Call for class
+              times.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Level 2 &nbsp</div>
+                - 55 min, Once a week (Ages 5+)
+              </div>
+            </div>
+            <div class="image"><img src="../assets/B_Level_2.png" alt=""></div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">This class is for those who have completed our beginner program or for those who
+              have some gymnastics experience. Our intermediate level gymnasts will further develop their strength,
+              flexibility and skills on each event. Classes are designed to provide a more challenging environment focusing on
+              their gymnastics skills while continuing to promote their self-esteem and body awareness.*Students must be
+              evaluated to register for this class.</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed header pe-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Tumbling
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Beginning Tumbling &nbsp</div>
+                - 55 min, Once a week
+              </div>
+            </div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">This is a beginner level class for tumblers with little to no experience. Novice tumblers
+              will learn basic tumbling progressions in order to build a strong foundation for learning more difficult skills
+              including but not limited to: forward and backward rolls, handstands, hurdles, cartwheels, bridges, fly backs,
+              and back bends.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Intermediate Tumbling &nbsp</div>
+                - 55 min, Once a week
+              </div>
+            </div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">This class is for gymnasts, cheerleaders and tumblers with experience or who have
+              successfully completed our beginning tumbling program. Skills that will be developed in this class include but
+              are not limited to: Round offs, Back bend/bridge kick over, back walk-over, Front walk over, front handspring,
+              power hurdles.</div>
+          </div>
+          <div class="accordion-body subsection">
+            <div class="subheader pe-4">
+              <div class="d-flex flex-wrap nameRegular">
+                <div class="nameBold">Advanced Tumbling &nbsp</div>
+                - 55 min, Once a week
+              </div>
+            </div>
+            <div class="price">$89/month</div>
+            <div class="description pe-4">This class is for gymnasts, cheerleaders and tumblers with experience or who have
+              successfully completed our intermediate tumbling program. Skills that will be developed in this class include
+              but are not limited to: Round off back handsprings, aerials, standing tucks, punch fronts.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center mt-auto" style="padding-top: 25px; padding-bottom: 25px;">
     <img src="../assets/Gymnast_Banner_large.jpg" alt="" style="width: 80%;">
   </div>
-  
+
   <div class="container-fluid footer mmm">
     <div class="location1">7404 Murray DriveStockton CA 95210</div>
-    <div class="location2">Phone: (209) 477-8978 / Email: championfrontdesk@yahoo.com</div>
+    <div class="location2">Phone: (209) 477-8978 / <br> Email: championfrontdesk@yahoo.com</div>
     <div class="location3">
       <img class="image" src="../assets/GymLeadersLogo.png" alt="">
       <div class="text">THE GYM LEADERS</div>

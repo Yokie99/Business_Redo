@@ -1,317 +1,651 @@
-@font-face { font-family:Amaranth-Regular; src: url("../fonts/Amaranth-Regular.ttf"); }
-@font-face { font-family:Amaranth-Bold; src: url("../fonts/Amaranth-Bold.ttf"); }
-@font-face { font-family:OpenSans-Regular; src: url("../fonts/OpenSans/OpenSans-Regular.ttf"); }
-@font-face { font-family:OpenSans-Bold; src: url("../fonts/OpenSans/OpenSans-Bold.ttf"); }
-@font-face { font-family:Inter-ExtraBold; src: url("../fonts/Inter/Inter-ExtraBold.ttf"); }
+@font-face {
+    font-family: Amaranth-Regular;
+    src: url("../fonts/Amaranth-Regular.ttf");
+}
+
+@font-face {
+    font-family: Amaranth-Bold;
+    src: url("../fonts/Amaranth-Bold.ttf");
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url("../fonts/Inter/Inter-ExtraBold.ttf");
+}
 
 /* Kyle Style */
-.navLogo{
+.navLogo {
     height: 70px;
     width: auto;
 }
 
-.mmm{
+.mmm {
     background-color: rgba(65, 64, 69, 1);
 }
 
-.bb1{
+.bb1 {
     border: solid 3px black;
 }
-.bb2{
-     border: solid 3px blue;
+
+.bb2 {
+    border: solid 3px blue;
 }
 
-.headTxt{
+.headTxt {
     font-size: 36px;
     color: white;
 }
-.pTxt{
+
+.pTxt {
     font-size: 30px;
     color: white;
 
 }
 
 
-.bgBeam{
-    
-    height: 80vh;   
-    
+.bgBeam {
+
+    height: 80vh;
+
     background-image: url(../assets/flying_beam.jpg);
     background-position: 0px -230px;
     background-size: cover;
-    background-repeat: no-repeat; 
-    
+    background-repeat: no-repeat;
+
 }
 
 
-.bgVault{
-   
+.bgVault {
+
     height: 80vh;
     background-image: url(../assets/vault_landing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-   
-} 
+
+}
 
 
 
 /* Jo Style */
 
-.navBarText{
+.navBarText {
     color: white !important;
     font-family: Amaranth-Regular;
     font-size: 20px;
 }
 
- .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  
-  .navbar-toggler {
+}
+
+.navbar-toggler {
     border-color: rgba(255, 255, 255, 0);
-  } 
-
-.classesHeader{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.classesHeader .title{
-    font-family: Amaranth-Regular;
-    font-size: 50px;
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    .classesHeader {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .classesHeader .title {
+        font-family: Amaranth-Regular;
+        font-size: 50px;
+    }
+
+    .classesMenu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .classesMenu .header {
+        padding-left: 50px;
+        padding-right: 50px;
+        border-bottom: solid;
+        border-width: 4px;
+        font-family: Amaranth-Bold;
+        font-size: 48px;
+    }
+
+    /*-----------------------*/
+
+    .tabletPrice {
+        display: none;
+    }
+
+    .classesMenu .subsection1 {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: auto max-content;
+        grid-template-rows: max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection1 .subheader {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .classesMenu .subsection1 .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection1 .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection1 .subheader .price {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection1 .description {
+        grid-row: 2;
+        grid-column: 1;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+
+    }
+
+    .classesMenu .subsection1 .image {
+        grid-row: 1 / spans;
+        grid-column: 2;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    /*-----------------------*/
+
+    .classesMenu .subsection2 {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-template-rows: max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection2 .subheader {
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .classesMenu .subsection2 .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection2 .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection2 .subheader .price {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection2 .description {
+        grid-row: 2;
+        grid-column: 2;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+    }
+
+    .classesMenu .subsection2 .image {
+        grid-row: 1 / spans;
+        grid-column: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+
+    /*-----------------------*/
+
+    .classesMenu .subsection3 {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection3 .subheader {
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .classesMenu .subsection3 .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection3 .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection3 .subheader .price {
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+    }
+
+    .classesMenu .subsection3 .description {
+        grid-row: 2;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+    }
+
+    /*--------------------------*/
+
+    .footer .location2 br {
+        display: none;
+    }
 }
 
-.classesMenu{
-    padding-left: 100px;
-    padding-right: 100px;
-}
+/*footer for tablet and desktop*/
+@media only screen and (min-width: 768px) {
+    .classMenuAccordion {
+        display: none;
+    }
 
-.classesMenu .header{
-    padding-left: 50px;
-    padding-right: 50px;
-    border-bottom: solid;
-    border-width: 4px;
-    font-family: Amaranth-Bold;
-    font-size: 48px;
-}
+    .footer {
+        display: grid;
+        grid-template-rows: max-content max-content;
+        grid-template-columns: 4fr 3fr;
+        height: max-content;
+        margin-top: 10px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-/*-----------------------*/
+    .footer .location1 {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: end;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
 
-.classesMenu .subsection1{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: auto max-content;
-    grid-template-rows: max-content max-content;
-    border-bottom: solid;
-    border-width: 2px;
-}
+    .footer .location2 {
+        grid-row: 2;
+        grid-column: 1;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+        align-items: end;
+    }
 
-.classesMenu .subsection1 .subheader{
-    grid-row: 1;
-    grid-column: 1;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
+    .footer .location3 {
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding-bottom: 5px;
+    }
 
-.classesMenu .subsection1 .subheader .nameBold{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
+    .footer .location3 .image {
+        width: 125px;
+        height: auto;
+    }
 
-.classesMenu .subsection1 .subheader .nameRegular{
-    font-family: OpenSans-Regular;
-    font-size: 32px;
-}
+    .footer .location3 .text {
+        width: 125px;
+        height: auto;
+        color: white;
+        font-family: Inter-ExtraBold;
+        font-size: 20px;
+        text-align: right;
+        margin-left: -35px;
+        padding-bottom: 5px;
 
-.classesMenu .subsection1 .subheader .price{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
+    }
 
-.classesMenu .subsection1 .description{
-    grid-row: 2;
-    grid-column: 1;  
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-    
-}
-
-.classesMenu .subsection1 .image{
-    grid-row: 1 / spans;
-    grid-column: 2;
-    display: flex;
-    justify-content: right;
-    align-items: center;     
-}
-
-/*-----------------------*/
-
-.classesMenu .subsection2{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: max-content auto;
-    grid-template-rows: max-content max-content;
-    border-bottom: solid;
-    border-width: 2px;
-}
-
-.classesMenu .subsection2 .subheader{
-    grid-row: 1;
-    grid-column: 2;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
-
-.classesMenu .subsection2 .subheader .nameBold{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
-
-.classesMenu .subsection2 .subheader .nameRegular{
-    font-family: OpenSans-Regular;
-    font-size: 32px;
-}
-
-.classesMenu .subsection2 .subheader .price{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
-
-.classesMenu .subsection2 .description{
-    grid-row: 2;
-    grid-column: 2;  
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-}
-
-.classesMenu .subsection2 .image{
-    grid-row: 1 / spans;
-    grid-column: 1;
-    display: flex;
-    justify-content: left;
-    align-items: center;     
+    .footer .location4 {
+        grid-row: 2;
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+    }
 }
 
 
-/*-----------------------*/
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .classesHeader {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.classesMenu .subsection3{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    border-bottom: solid;
-    border-width: 2px;
+    .classesHeader .title {
+        font-family: Amaranth-Regular;
+        font-size: 40px;
+    }
+
+    .classesHeader .button {
+        width: 200px
+    }
+
+    .classesMenu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .classesMenu .header {
+        border-bottom: solid;
+        border-width: 4px;
+        font-family: Amaranth-Bold;
+        font-size: 40px;
+    }
+
+    /*-----------------------*/
+
+    .classesMenu .subsection1 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection2 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .classesMenu .subsection3 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .subheader {
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        padding-left: 0 !important;
+    }
+
+    .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+    }
+
+    .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 25px;
+    }
+
+    .subheader .price {
+        display: none;
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+    }
+
+    .tabletPrice {
+        font-family: OpenSans-Bold;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+
+    .description {
+        grid-row: 4;
+        font-family: OpenSans-Regular;
+        font-size: 18px;
+        padding-left: 0 !important;
+    }
+
+    .image {
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    /* -------------------------- */
+
+    .footer .location2 br {
+        display: none;
+    }
+
 }
 
-.classesMenu .subsection3 .subheader{
-    grid-row: 1;
-    display: flex;
-    justify-content: space-between;
+/*mobile*/
+@media only screen and (max-width: 767px) {
+    .classesHeader {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .classesHeader .title {
+        font-family: Amaranth-Regular;
+        font-size: 20px;
+    }
+
+    .classesHeader .button {
+        width: 175px
+    }
+
+    /* ------------------------- */
+
+    .classesMenu {
+        display: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent !important;
+        color: inherit;
+    }
+
+    button.accordion-button:focus {
+        box-shadow: inherit;
+    }
+
+    .classMenuAccordion {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .classMenuAccordion .header {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: solid;
+        border-width: 4px;
+        font-family: Amaranth-Bold;
+        font-size: 20px;
+    }
+
+    .subsection {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        border-bottom: solid;
+        border-width: 2px;
+    }
+
+    .subsection .subheader {
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+
+    .subsection .subheader .nameBold {
+        font-family: OpenSans-Bold;
+        font-size: 20px;
+    }
+
+    .subsection .subheader .nameRegular {
+        font-family: OpenSans-Regular;
+        font-size: 20px;
+    }
+
+    .subsection .image {
+        grid-row: 2;
+        padding-bottom: 15px;
+    }
+
+    .subsection .price {
+        grid-row: 3;
+        font-family: OpenSans-Bold;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+
+    .subsection .description {
+        grid-row: 4;
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+
+    /* ------------------------- */
+
+    .footer {
+        align-self: flex-end;
+        display: grid;
+        grid-template-rows: max-content max-content;
+        grid-template-columns: 4fr 3fr;
+        height: max-content;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer .location1 {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: end;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .footer .location2 {
+        grid-row: 2;
+        grid-column: 1;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 10px;
+    }
+
+    .footer .location3 {
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin-bottom: -10px;
+    }
+
+    .footer .location3 .image {
+        width: 50px;
+        height: auto;
+    }
+
+    .footer .location3 .text {
+        width: 75px;
+
+        color: white;
+        font-family: Inter-ExtraBold;
+        font-size: 12px;
+        text-align: right;
+        margin-left: -15px;
+
+
+    }
+
+    .footer .location4 {
+        grid-row: 2;
+        grid-column: 2;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        color: white;
+        font-family: OpenSans-Regular;
+        font-size: 10px;
+        text-align: right;
+    }
 }
 
-.classesMenu .subsection3 .subheader .nameBold{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
 
-.classesMenu .subsection3 .subheader .nameRegular{
-    font-family: OpenSans-Regular;
-    font-size: 32px;
-}
 
-.classesMenu .subsection3 .subheader .price{
-    font-family: OpenSans-Bold;
-    font-size: 32px;
-}
-
-.classesMenu .subsection3 .description{
-    grid-row: 2;
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-}
-
-/*--------------------------*/
-
-.footer{
-    display: grid;
-    grid-template-rows: max-content max-content;
-    grid-template-columns: 1fr 1fr;
-    height: max-content;
-    margin-top: 10px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.footer .location1{
-    grid-row: 1;
-    grid-column: 1;
-    display: flex;
-    align-items: end;
-    color: white;
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-.footer .location2{
-    grid-row: 2;
-    grid-column: 1;
-    color: white;
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-}
-.footer .location3{
-    grid-row: 1;
-    grid-column: 2;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-bottom: 5px;
-}
-
-.footer .location3 .image{
-    width: 125px;
-    height: auto;
-}
-
-.footer .location3 .text{
-    width: 125px;
-    height: auto;
-    color: white;
-    font-family: Inter-ExtraBold;
-    font-size: 20px;
-    text-align: right;
-    margin-left: -35px;
-    padding-bottom: 5px;
-    
-}
-
-.footer .location4{
-    grid-row: 2;
-    grid-column: 2;
-    display: flex;
-    justify-content: end;
-    color: white;
-    font-family: OpenSans-Regular;
-    font-size: 20px;
-}
 
 
 
