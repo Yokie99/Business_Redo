@@ -46,13 +46,19 @@
     color: white;
 }
 .pTxt{
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     color: white;
 
 }
 
+
 .pageTxt{
     font-size: 20px;
+}
+
+.pageTxt2{
+    font-size: 25px;
+    font-family: Amaranth-Bold;
 }
 
 .bgBeam {
