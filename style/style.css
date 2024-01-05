@@ -62,7 +62,7 @@
     height: 80vh;   
     
     background-image: url(../assets/Birthday.png);
-    background-position: -350px ;
+    /* background-position: -350px ; */
     background-size: cover;
     background-repeat: no-repeat; 
     position: relative;
