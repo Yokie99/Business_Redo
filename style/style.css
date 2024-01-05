@@ -29,6 +29,10 @@
     width: auto;
 }
 
+.titles{
+    font-size: 50px;
+    font-family: Amaranth-Bold;
+}
 .mmm {
     background-color: rgba(65, 64, 69, 1);
 }
@@ -42,18 +46,21 @@
 }
 
 .headTxt {
-    font-size: 36px;
+    font-size: 2.5vw;
     color: white;
+    font-family: Amaranth-Bold;
 }
 .pTxt{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     color: white;
+    font-family: OpenSans-Regular;
 
 }
 
 
 .pageTxt{
     font-size: 20px;
+    font-family: OpenSans-Regular;
 }
 
 .pageTxt2{
@@ -66,7 +73,7 @@
     height: 80vh;
 
     background-image: url(../assets/flying_beam.jpg);
-    background-position: 0px -230px;
+    
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -88,6 +95,23 @@
     
 }
 
+.titlesMob{
+    font-size: 30px;
+    font-family: Amaranth-Bold;
+}
+
+.headTxtMob {
+    font-size: 20px;
+    
+    font-family: Amaranth-Bold;
+}
+
+.pTxtMob{
+    font-size: 15px;
+    
+    font-family: OpenSans-Regular;
+
+}
 
 /* Birthday party */
 
@@ -117,6 +141,7 @@
 
 .bdayHeroTxt{
     font-size: 45px;
+    font-family: Amaranth-Regular;
        
 }
  
@@ -130,7 +155,15 @@
     
 }
 
+.header2{
+    font-size: 36px;
+    font-family: Amaranth-Bold;
+}
 
+.waiver{
+    font-family: OpenSans-Regular;
+    color: #62B6F3;
+}
 /* birthday mobile */
 .bgBdayMobile{
     
@@ -145,6 +178,7 @@
 }
 .bdayHeroTxtMobile{
     font-size: 30px;
+    font-family: Amaranth-Regular;
        
 }
 
@@ -828,9 +862,27 @@
     background-repeat: no-repeat;
 }
 
+.twenty {
+    font-size: 12px;
+}
+
 .fifty {
     font-size: 50px;
 }
+
+
+@media only screen and (max-width: 767px) {
+.twenty {
+    font-size: 12px;
+}
+
+.fifty {
+    font-size: 32px;
+}
+   
+}
+
+
 
 .tf {
     font-size: 35px;
@@ -858,9 +910,6 @@
     font-size: 30px;
 }
 
-.twenty {
-    font-size: 20px;
-}
 
 .coachsize {
     object-fit: cover;
