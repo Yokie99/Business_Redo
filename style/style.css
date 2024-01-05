@@ -30,6 +30,9 @@
 
 }
 
+.pageTxt{
+    font-size: 20px;
+}
 
 .bgBeam{
     
@@ -80,11 +83,18 @@
 
 .bdayHeroTxt{
     font-size: 45px;
-    
+       
+}
+ 
+.spacer{
+    width: 10px;
+}
+.bdayGym{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
-
-
 /* Jo Style */
 
 .navBarText{
