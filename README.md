@@ -16,7 +16,7 @@ Desktop Home Page - The "View All Upcoming Events" link looks out of place since
 
 Mobile Home Page - The event page text is hard to see on mobile, so maybe you can enlarge the image somehow. For the 3 portal buttons, if you want to keep the border radius, I think you should add padding or margin so that it doesn't touch the side of the screen. The footer text in mobile is overlapping.
 
-Desktop About Page - The border for the accordion is a bit thicker in some places
+Desktop About Page - The border for the accordion is a bit thicker in some places // fixed (1/6/24)
 
 Mobile About Page - All the header texts on mobile are kinda small and hard to read. For the gym photos on mobile I think you adding margin bottom so that they aren't touching would look better.
 
